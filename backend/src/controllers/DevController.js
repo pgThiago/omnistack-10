@@ -50,6 +50,60 @@ module.exports = {
             
         return response.json(dev);
     
+    },
+    
+    // Desafio do Di:
+    // Criar os métodos update() techs e destroy() user
+    // Não permitir q o user atualize o username pois não faz sentido NTC
+
+    async update(request, response){
+
+        const github_username = request.params; 
+        
+        const { techs } = request.body;
+
+        const techsArray = parseStringAsArray(techs);
+
+        const dev = await Dev.findOneAndUpdate(github_username, {
+            techs: techsArray,
+        },{
+            returnOriginal: false
+        });
+
+        if(!dev)
+            return response.status(202).json({ message: 'User not found' });
+
+
+        await dev.save();
+
+        return response.json(dev);
+
+        /* const { id } = request.params; 
+        
+        const { techs } = request.body;
+
+        const techsArray = parseStringAsArray(techs);
+
+        const dev = await Dev.findIdAndUpdate(id, {
+            techs: techsArray 
+        });
+
+        console.log(id);
+
+        return response.json(dev); */
+    },
+
+    async destroy(request, response){
+        
+        const { id } = request.params; 
+
+        const dev = await Dev.findByIdAndDelete(id, { returnOriginal: false     });
+
+        if(!dev)
+            return response.status(202).json({ message: 'User not found' });
+
+
+        return response.json(dev);
     }
 
 };

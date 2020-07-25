@@ -27,17 +27,5 @@ module.exports = {
 
         return response.json({ devs });
 
-    },
-
-    // Desafio do Di:
-    // Criar os métodos update() e destroy()
-    // Não permitir q o user atualize o username pois não faz sentido NTC
-
-    /* async update(){
-
-    },
-
-    async destroy(){
-        
-    } */
+    }
 }

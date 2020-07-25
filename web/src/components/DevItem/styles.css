@@ -1,3 +1,57 @@
+.buttons{
+    display: flex;
+    flex-direction: column;    
+}
+
+.link-button{
+    width: 50%;
+    border: 0;
+    margin-top: 30px;
+    background: #7d40e7;
+    border-radius: 5px;
+    padding:  15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.link-button a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.updateButton{
+    width: 50%;
+    border: 0;
+    margin-top: 30px;
+    background: #7d40e7;
+    border-radius: 5px;
+    padding:  15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.deleteButton{
+    width: 50%;
+    border: 0;
+    margin-top: 30px;
+    background: #7d40e7;
+    border-radius: 5px;
+    padding:  15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+
+/* Configs do diego */
 li.dev-item{
     background: #FFF;
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
@@ -40,8 +94,3 @@ li.dev-item p{
     margin:  10px 0;
 }
 
-li.dev-item a{
-    color: #8e4dff;
-    font-size: 14px;
-    text-decoration: none;
-}   

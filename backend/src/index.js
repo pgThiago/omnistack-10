@@ -14,7 +14,8 @@ setupWebsocket(server);
 mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-00qfm.mongodb.net/omnistack10',
 {   
     useNewUrlParser: true, 
-    useUnifiedTopology: true 
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }
 );
 
@@ -28,7 +29,7 @@ app.use(routes);
 
 // Query Params: request.query (Filtros, odenação, paginação, ...)
 // Route Params: request.params (Identificar um recurso na alteração ou remoção)
-// Body Params: request.body (Dados para criação ou alteração de um registro)
+// Body Params:  request.body (Dados para criação ou alteração de um registro)
 
 
 server.listen(3333);
