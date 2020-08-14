@@ -52,7 +52,7 @@ DevRadar is a project that aims to connect developers close to you who work with
 
 ## 🔖 Layout
 
-You can download the project layout in `.sketch` format through [this link](https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/semana-omnistack/aircnc.sketch).
+You can download the project layout in `.sketch` format through [this link](.github/DevRadar.sketc).
 
 In order to open the file in `.sketch` format in any operating system you can use this tool: [Zeplin](https://zeplin.io).
 
