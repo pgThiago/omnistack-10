@@ -1,3 +1,5 @@
+[Official repository is here ](https://github.com/rocketseat-education/semana-omnistack-10)(in portuguese).
+  
 <h1 align="center">
     <img alt="DevRadar" title="#delicinha" src=".github/devradar.svg" width="250px" />
 </h1>
